@@ -1,6 +1,6 @@
 # Base de datos de pacientes infectados por corona virus en Guatemala
 
-Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes externas, de los casos confirmados de Corona Virus en Guatemala.
+Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
 Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estudien la propagacion del virus corona NCOVID-19 en Guatemala. Proveer una base de datos para que otras personas desarrollen visualizaciones y analisis.
 
@@ -8,7 +8,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 Descripcion de campos
 
-## Pacientes
+## pacientes.csv
 
 Contine la informacion disponible de los casos confirmados de corona virus en Guatemala.
 
@@ -29,7 +29,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 - fuente: enlace a la fuente de la noticia en wayback machine (ver abajo) (string)
 
 
-## Falsos.csv
+## falsos.csv
 Continen informacion de casos falsos de corona virus: noticias falsas, desinformacion. Intentemos identificar el origen de estas falsas noticias y asi reconocer a los malos actores en la sociedad.
 
 - id: numero de noticia de desinformacion (numerico, entero)
@@ -55,4 +55,4 @@ c) Click en el boton "Save Page"
 d) Copiar el enlace a la nueva pagina. Este enlace inicia con https://web.archive.org: 
 	- Ejemplo: https://web.archive.org/web/20200315072155/https://www.prensalibre.com/guatemala/comunitario/coronavirus-alejandro-giammattei-confirma-el-primer-caso-de-covid-19-en-guatemala/
 
-
+Contacto: utiliza la pestana [issues](https://github.com/ncovgt2020/ncovgt2020/issues) para hacer sugerencias/comentarios, notificar sobre nuevos casos. Haz un pull request para contribuir. Escribe un correo a ncovgt2020@hotmail.com.
