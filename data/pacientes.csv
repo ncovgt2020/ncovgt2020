@@ -1,0 +1,2 @@
+id,sexo,fecha_nacimiento,pais,departamento,enfermedad,grupo,razon_infeccion,infectado_por,fecha_confirmacion,fecha_recuperacion,fecha_desceso,estado,fuente
+1,m,1992-01-01,guatemala,guatemala,desconocido,1,Viaje Italia/Madrid/Bogota/SanSalvador,-99,2020-03-13,,,0,https://web.archive.org/web/20200315072155/https://www.prensalibre.com/guatemala/comunitario/coronavirus-alejandro-giammattei-confirma-el-primer-caso-de-covid-19-en-guatemala/
