@@ -14,12 +14,14 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 
 - id: numero de paciente (numerico, entero)
 - sexo: m: masculino, f: femenino, x: desconocido (string)
-- fecha_nacimiento: aa-mm-dd, ano de nacimiento. El dia y mes no se registran y se utiliza un valor por defecto 01-01(string)
+- fecha_nacimiento: aa-mm-dd, ano de nacimiento. Se calcula como: fecha = 2020 - Edad, por tanto el dia y mes no se registran y se utiliza un valor por defecto 01-01(string)
+- edad: edad del paciente (numerico, entero)
 - pais: pais de origen/nacionalidad (string)
 - departamento: Region donde tuvo mayor actividad (string)
 - enfermedad: condicion medica previa o desconocido (string)
 - grupo: relacion con algun grupo especifico, -99: desconocido, no aplica (numerico, entero)
 	- 1: vuelo 11 de marzo aeromexico
+	- 2: vuelo 6 de marzo iberia
 - razon_infeccion: causa de la infeccion (viaje, visita a familiar, visita a hospital, contacto con paciente, etc) (string)
 - infectado_por: id del paciente que transmitio, -99: desconocido (numerico, entero)
 - fecha_confirmacion: aa-mm-dd fecha en la que se confirmo la infeccion, o campo vacio si es desconocido (string)
@@ -55,4 +57,4 @@ c) Click en el boton "Save Page"
 d) Copiar el enlace a la nueva pagina. Este enlace inicia con https://web.archive.org: 
 	- Ejemplo: https://web.archive.org/web/20200315072155/https://www.prensalibre.com/guatemala/comunitario/coronavirus-alejandro-giammattei-confirma-el-primer-caso-de-covid-19-en-guatemala/
 
-Contacto: utiliza la pestana [issues](https://github.com/ncovgt2020/ncovgt2020/issues) para hacer sugerencias/comentarios, notificar sobre nuevos casos. Haz un pull request para contribuir. Escribe un correo a ncovgt2020@hotmail.com.
+Contacto: utiliza la pestana [issues](https://github.com/ncovgt2020/ncovgt2020/issues) para hacer sugerencias/comentarios, notificar sobre nuevos casos. Haz un pull request para contribuir. Escribe un correo a ncovgt2020[arroba]hotmail.com.
