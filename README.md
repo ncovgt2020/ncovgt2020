@@ -6,6 +6,18 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ***Licencia: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)***
 
+## Estadisticas
+
+Confirmados: 8
+
+Recuperados: 0
+
+Fallecidos: 1
+
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/fallecidos.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/recuperados.png)
+
 Descripcion de campos
 
 ## pacientes.csv
