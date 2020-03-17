@@ -14,9 +14,9 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 
 - id: numero de paciente (numerico, entero)
 - sexo: m: masculino, f: femenino, x: desconocido (string)
-- fecha_nacimiento: aa-mm-dd, ano de nacimiento. Se calcula como: fecha = 2020 - Edad, por tanto el dia y mes no se registran y se utiliza un valor por defecto 01-01(string)
-- edad: edad del paciente (numerico, entero)
-- pais: pais de origen/nacionalidad (string)
+- fecha_nacimiento: aa-mm-dd, ano de nacimiento. Se calcula como: fecha = 2020 - Edad, por tanto el dia y mes no se registran y se utiliza un valor por defecto 01-01(string), o campo vacio
+- edad: edad del paciente (numerico, entero), -99: desconocido
+- pais: pais de origen/nacionalidad (string) o campo vacio
 - departamento: Region donde tuvo mayor actividad (string)
 - enfermedad: condicion medica previa o desconocido (string)
 - grupo: relacion con algun grupo especifico, -99: desconocido, no aplica (numerico, entero)
@@ -26,7 +26,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 - infectado_por: id del paciente que transmitio, -99: desconocido (numerico, entero)
 - fecha_confirmacion: aa-mm-dd fecha en la que se confirmo la infeccion, o campo vacio si es desconocido (string)
 - fecha_recuperacion: aa-mm-dd fecha en la que el paciente se recupero, o campo vacio si es desconocido (string)
-- fecha_desceso: aa-mm-dd fecha en que el paciente fallecio, o campo vacio (string)
+- fecha_deceso: aa-mm-dd fecha en que el paciente fallecio, o campo vacio (string)
 - estado: 0: aislado  1: recuperado  2: fallecido (numerico, entero)
 - fuente: enlace a la fuente de la noticia en wayback machine (ver abajo) (string)
 
