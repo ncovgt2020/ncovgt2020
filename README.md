@@ -34,6 +34,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 - grupo: relacion con algun grupo especifico, -99: desconocido, no aplica (numerico, entero)
 	- 1: vuelo 11 de marzo aeromexico
 	- 2: vuelo 6 de marzo iberia
+	- 3: contacto con paciente 2 (primer fallecido)
 - razon_infeccion: causa de la infeccion (viaje, visita a familiar, visita a hospital, contacto con paciente, etc) (string)
 - infectado_por: id del paciente que transmitio, -99: desconocido (numerico, entero)
 - fecha_confirmacion: aa-mm-dd fecha en la que se confirmo la infeccion, o campo vacio si es desconocido (string)
