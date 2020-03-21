@@ -8,7 +8,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 9
+Confirmados: 12
 
 Recuperados: 0
 
@@ -17,6 +17,9 @@ Fallecidos: 1
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados.png)
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/fallecidos.png)
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/recuperados.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados_sexo.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/fallecidos_sexo.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/recuperados_sexo.png)
 
 Descripcion de campos
 
