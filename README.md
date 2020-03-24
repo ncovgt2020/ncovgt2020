@@ -39,6 +39,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 	- 2: vuelo 6 de marzo iberia
 	- 3: contacto con paciente 2 (primer fallecido)
 - razon_infeccion: causa de la infeccion (viaje, visita a familiar, visita a hospital, contacto con paciente, etc) (string)
+- ingreso_guatemala: aa-mm-dd, si viajo al extranjero, fecha en que regreso a Guatemala, o campo vacio si es desconocido (string)
 - infectado_por: id del paciente que transmitio, -99: desconocido (numerico, entero)
 - fecha_confirmacion: aa-mm-dd fecha en la que se confirmo la infeccion, o campo vacio si es desconocido (string)
 - fecha_recuperacion: aa-mm-dd fecha en la que el paciente se recupero, o campo vacio si es desconocido (string)
