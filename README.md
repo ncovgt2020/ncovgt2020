@@ -8,9 +8,9 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 21
+Confirmados: 24
 
-Recuperados: 0
+Recuperados: 3
 
 Fallecidos: 1
 
