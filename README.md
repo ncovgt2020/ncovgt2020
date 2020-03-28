@@ -8,7 +8,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 25
+Confirmados: 32
 
 Recuperados: 5
 
@@ -38,6 +38,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 	- 1: vuelo 11 de marzo aeromexico
 	- 2: vuelo 6 de marzo iberia
 	- 3: contacto con paciente 2 (primer fallecido)
+	- 4: vuelo 26 de marzo, rescate de Espana
 - razon_infeccion: causa de la infeccion (viaje, visita a familiar, visita a hospital, contacto con paciente, etc) (string)
 - ingreso_guatemala: aa-mm-dd, si viajo al extranjero, fecha en que regreso a Guatemala, o campo vacio si es desconocido (string)
 - infectado_por: id del paciente que transmitio, -99: desconocido (numerico, entero)
