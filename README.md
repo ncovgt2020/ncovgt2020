@@ -8,7 +8,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 32
+Confirmados: 34
 
 Recuperados: 5
 
