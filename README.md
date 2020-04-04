@@ -1,4 +1,4 @@
-	# Base de datos de pacientes infectados por corona virus en Guatemala
+# Base de datos de pacientes infectados por corona virus en Guatemala
 
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
