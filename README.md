@@ -1,4 +1,4 @@
-# Base de datos de pacientes infectados por corona virus en Guatemala
+	# Base de datos de pacientes infectados por corona virus en Guatemala
 
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
@@ -8,7 +8,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 38
+Confirmados: 50
 
 Recuperados: 12 (* se tiene informacion solo de 5 recuperados, de los 7 restantes, no se sabe quienes son)
 
@@ -36,7 +36,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 - enfermedad: condicion medica previa o desconocido (string)
 - grupo: relacion con algun grupo especifico, -99: desconocido, no aplica (numerico, entero)
 	- 1: vuelo 11 de marzo aeromexico
-	- 2: vuelo 6 de marzo iberia
+	- 2: vuelo 6 de marzo ib	eria
 	- 3: contacto con paciente 2 (primer fallecido)
 	- 4: vuelo 26 de marzo, rescate de Espana
 	- 5: contacto con familiar paciente 38 (este familiar de paciente 38 vino de Nueva York)_
