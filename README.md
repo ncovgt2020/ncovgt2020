@@ -2,9 +2,13 @@
 
 # SE NECESITA AYUDA URGENTE
 
+
 Si te parece importante este repositorio, ***porfavor ayudanos***. 
 
-Necesitamos voluntarios que busquen, recopilen y verifiquen informacion.
+Necesitamos voluntarios que busquen, recopilen y verifiquen informacion. 
+
+Escribenos un correo ncovgt2020@hotmail.com, o escribe un [issue](https://github.com/ncovgt2020/ncovgt2020/issues)
+
 
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
@@ -14,18 +18,14 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 50
+Confirmados: 74
 
 Recuperados: 12 (* se tiene informacion solo de 5 recuperados, de los 7 restantes, no se sabe quienes son)
 
-Fallecidos: 1
+Fallecidos: 3
 
-![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados.png)
-![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/fallecidos.png)
-![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/recuperados.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/resumen.png)
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados_sexo.png)
-![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/fallecidos_sexo.png)
-![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/recuperados_sexo.png)
 
 Descripcion de campos
 
