@@ -1,5 +1,11 @@
 # Base de datos de pacientes infectados por corona virus en Guatemala
 
+# SE NECESITA AYUDA URGENTE
+
+Si te parece importante este repositorio, ***porfavor ayudanos***. 
+
+Necesitamos voluntarios que busquen, recopilen y verifiquen informacion.
+
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
 Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estudien la propagacion del virus corona NCOVID-19 en Guatemala. Proveer una base de datos para que otras personas desarrollen visualizaciones y analisis.
@@ -51,8 +57,23 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 - estado: 0: aislado  1: recuperado  2: fallecido (numerico, entero)
 - fuente: enlace a la fuente de la noticia en wayback machine (ver abajo) (string)
 
+## resumen_casos.csv
 
-## falsos.csv
+Contiene la informacion de casos confirmados, recuperados y fallecidos ordenados por dia. Debido a dificultad para conseguir informacion oficial, es posible que en el futuro cercano no logremos recopilar informacion por paciente, sino solo totales de cada dia.
+
+- fecha: aa-mm-dd, fecha correspondiente a los datos (string)
+- confirmados: confirmados en la fecha indicada (numerico, entero)
+- recuperados: recuperados en la fecha indicada (numerico, entero)
+- fallecidos: fallecidos en la fecha indicada (numerico, entero)
+- fuente: fuente de informacion de los datos (string)
+
+
+## falsos.csv 
+
+***Actualizacion 07 de Abril 2020 ***
+Tuvimos la intencion de recopilar informacion falsa que surge durante esta pandemia. Por la gran cantidad de tiempo que requiere, no le estamos haciendo desde el 15 de marzo de 2020. 
+
+
 Continen informacion de casos falsos de corona virus: noticias falsas, desinformacion. Intentemos identificar el origen de estas falsas noticias y asi reconocer a los malos actores en la sociedad.
 
 - id: numero de noticia de desinformacion (numerico, entero)
