@@ -18,7 +18,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 74
+Confirmados: 77
 
 Recuperados: 12 (* se tiene informacion solo de 5 recuperados, de los 7 restantes, no se sabe quienes son)
 
