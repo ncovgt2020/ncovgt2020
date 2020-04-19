@@ -1,14 +1,15 @@
-# Base de datos de pacientes infectados por corona virus en Guatemala
-
 # SE NECESITA AYUDA URGENTE
-
 
 Si te parece importante este repositorio, ***porfavor ayudanos***. 
 
-Necesitamos voluntarios que busquen, recopilen y verifiquen informacion. 
+Necesitamos voluntarios queÑ
+- Busquen, recopilen y verifiquen informacion. 
+- Utilizando estos datos de Guatemala, contribuyan al [repositorio de latinoamérica](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica).
+- Generen visualizaciones a través de nuestros datos.
 
 Escribenos un correo ncovgt2020@hotmail.com, o escribe un [issue](https://github.com/ncovgt2020/ncovgt2020/issues)
 
+# Base de datos de pacientes infectados por corona virus en Guatemala
 
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
