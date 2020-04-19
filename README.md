@@ -18,14 +18,7 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-Confirmados: 77
-
-Recuperados: 12 (* se tiene informacion solo de 5 recuperados, de los 7 restantes, no se sabe quienes son)
-
-Fallecidos: 3
-
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/resumen.png)
-[//]: # ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/confirmados_sexo.png)
 
 Descripcion de campos
 
