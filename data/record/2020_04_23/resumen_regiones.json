@@ -66,7 +66,7 @@
             "attributes": {
                 "FID": 1,
                 "Region": "Centro",
-                "Casos": 193,
+                "Casos": 200,
                 "Field": 0,
                 "Shape__Area": 4609263429.45642,
                 "Shape__Length": 400309.397622339
@@ -76,7 +76,7 @@
             "attributes": {
                 "FID": 2,
                 "Region": "Norte",
-                "Casos": 18,
+                "Casos": 20,
                 "Field": 0,
                 "Shape__Area": 58059675550.2839,
                 "Shape__Length": 1646001.61924071
@@ -86,7 +86,7 @@
             "attributes": {
                 "FID": 3,
                 "Region": "Occidente",
-                "Casos": 53,
+                "Casos": 62,
                 "Field": 0,
                 "Shape__Area": 14121960735.5744,
                 "Shape__Length": 717600.555420887
@@ -96,7 +96,7 @@
             "attributes": {
                 "FID": 4,
                 "Region": "Oriente",
-                "Casos": 29,
+                "Casos": 35,
                 "Field": 0,
                 "Shape__Area": 16508765694.8613,
                 "Shape__Length": 1238830.13501564
@@ -106,7 +106,7 @@
             "attributes": {
                 "FID": 5,
                 "Region": "Sur",
-                "Casos": 23,
+                "Casos": 25,
                 "Field": 0,
                 "Shape__Area": 15087583584.8004,
                 "Shape__Length": 985995.463263183

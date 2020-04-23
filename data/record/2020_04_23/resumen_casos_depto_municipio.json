@@ -4572,6 +4572,384 @@
                 "Conteo": 1,
                 "ObjectId": 320
             }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 317,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 321
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 318,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 322
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 319,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 323
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 320,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 324
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 321,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 325
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 322,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 326
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 323,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 327
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 324,
+                "Genero": "Femenino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 328
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 325,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 329
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 326,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 330
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 327,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 331
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 328,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 332
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 329,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 333
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 330,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 334
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 331,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 335
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 332,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 336
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 333,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 337
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 334,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 338
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 335,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 339
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 336,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 340
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 337,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 341
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 338,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 342
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 339,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 343
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 340,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 344
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 341,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 345
+            }
+        },
+        {
+            "attributes": {
+                "Dia": 42,
+                "Fecha": 1587545520000,
+                "Casos": 342,
+                "Genero": "Masculino",
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": 1,
+                "ObjectId": 346
+            }
+        },
+        {
+            "attributes": {
+                "Dia": null,
+                "Fecha": null,
+                "Casos": null,
+                "Genero": null,
+                "Edad": null,
+                "REdad": null,
+                "Departamento": null,
+                "Municipio": null,
+                "Conteo": null,
+                "ObjectId": 347
+            }
         }
     ]
 }
