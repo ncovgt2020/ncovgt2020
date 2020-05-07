@@ -1913,6 +1913,46 @@
                 "Estado": "Fallecido2",
                 "ObjectId": 251
             }
+        },
+        {
+            "attributes": {
+                "Muerte": 21,
+                "Actualizacion2": 1588755540000,
+                "Estado": "Fallecido",
+                "ObjectId": 252
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 86,
+                "Actualizacion2": 1588755540000,
+                "Estado": "Recuperado",
+                "ObjectId": 253
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 689,
+                "Actualizacion2": 1588755540000,
+                "Estado": "Activo",
+                "ObjectId": 254
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 798,
+                "Actualizacion2": 1588755540000,
+                "Estado": "Confirmado",
+                "ObjectId": 255
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 2,
+                "Actualizacion2": 1588755540000,
+                "Estado": "Fallecido2",
+                "ObjectId": 256
+            }
         }
     ]
 }
