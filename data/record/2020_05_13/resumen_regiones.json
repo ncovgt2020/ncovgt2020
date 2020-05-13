@@ -1,0 +1,116 @@
+{
+    "objectIdFieldName": "FID",
+    "uniqueIdField": {
+        "name": "FID",
+        "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+        "wkid": 32615,
+        "latestWkid": 32615
+    },
+    "fields": [
+        {
+            "name": "FID",
+            "type": "esriFieldTypeOID",
+            "alias": "FID",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Region",
+            "type": "esriFieldTypeString",
+            "alias": "Region",
+            "sqlType": "sqlTypeOther",
+            "length": 254,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Casos",
+            "type": "esriFieldTypeInteger",
+            "alias": "Casos",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Field",
+            "type": "esriFieldTypeInteger",
+            "alias": "Field",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Shape__Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Area",
+            "sqlType": "sqlTypeDouble",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Shape__Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Length",
+            "sqlType": "sqlTypeDouble",
+            "domain": null,
+            "defaultValue": null
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "FID": 1,
+                "Region": "Centro",
+                "Casos": 735,
+                "Field": 0,
+                "Shape__Area": 4609263429.45642,
+                "Shape__Length": 400309.397622339
+            }
+        },
+        {
+            "attributes": {
+                "FID": 2,
+                "Region": "Norte",
+                "Casos": 102,
+                "Field": 0,
+                "Shape__Area": 58059675550.2839,
+                "Shape__Length": 1646001.61924071
+            }
+        },
+        {
+            "attributes": {
+                "FID": 3,
+                "Region": "Occidente",
+                "Casos": 138,
+                "Field": 0,
+                "Shape__Area": 14121960735.5744,
+                "Shape__Length": 717600.555420887
+            }
+        },
+        {
+            "attributes": {
+                "FID": 4,
+                "Region": "Oriente",
+                "Casos": 143,
+                "Field": 0,
+                "Shape__Area": 16508765694.8613,
+                "Shape__Length": 1238830.13501564
+            }
+        },
+        {
+            "attributes": {
+                "FID": 5,
+                "Region": "Sur",
+                "Casos": 81,
+                "Field": 0,
+                "Shape__Area": 15087583584.8004,
+                "Shape__Length": 985995.463263183
+            }
+        }
+    ]
+}
