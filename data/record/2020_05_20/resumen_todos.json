@@ -2441,6 +2441,46 @@
                 "Estado": "Fallecido2",
                 "ObjectId": 321
             }
+        },
+        {
+            "attributes": {
+                "Muerte": 43,
+                "Actualizacion2": 1589878740000,
+                "Estado": "Fallecido",
+                "ObjectId": 322
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 155,
+                "Actualizacion2": 1589878740000,
+                "Estado": "Recuperado",
+                "ObjectId": 323
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 1933,
+                "Actualizacion2": 1589878740000,
+                "Estado": "Activo",
+                "ObjectId": 324
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 2133,
+                "Actualizacion2": 1589878740000,
+                "Estado": "Confirmado",
+                "ObjectId": 325
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 2,
+                "Actualizacion2": 1589878740000,
+                "Estado": "Fallecido2",
+                "ObjectId": 326
+            }
         }
     ]
 }
