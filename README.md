@@ -16,8 +16,17 @@ Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiale
 Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estudien la propagacion del virus corona NCOVID-19 en Guatemala. Proveer una base de datos para que otras personas desarrollen visualizaciones y analisis.
 
 ***Licencia: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)***
+## Actualizaciones
+
+22 de Mayo 2020: Ahora estamos recopilando el numero de pruebas utilizando los reportes de [OjoConMiPisto](https://twitter.com/_ojoconmipisto). ¡Gracias OjoConMiPisto!
 
 ## Estadisticas
+
+confirmados:  2743
+recuperados:  222.0
+fallecidos:  51
+activos 2468
+pruebas realizadas:  20834.0
 
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/resumen.png)
 
