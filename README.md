@@ -28,7 +28,7 @@ recuperados:  222.0
 
 fallecidos:  51
 
-activos 2468
+activos: 2468
 
 pruebas realizadas:  20834
 
