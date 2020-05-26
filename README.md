@@ -22,15 +22,15 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-confirmados:  2743
+confirmados:  3760
 
-recuperados:  222.0
+recuperados:  258.0
 
-fallecidos:  51
+fallecidos:  59
 
-activos: 2468
+activos 3425
 
-pruebas realizadas:  20834
+pruebas realizadas:  26797
 
 
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/resumen.png)
