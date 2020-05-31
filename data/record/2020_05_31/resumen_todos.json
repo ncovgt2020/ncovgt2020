@@ -2881,6 +2881,46 @@
                 "Estado": "Fallecido2",
                 "ObjectId": 376
             }
+        },
+        {
+            "attributes": {
+                "Muerte": 102,
+                "Actualizacion2": 1590829140000,
+                "Estado": "Fallecido",
+                "ObjectId": 377
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 706,
+                "Actualizacion2": 1590829140000,
+                "Estado": "Recuperado",
+                "ObjectId": 378
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 3929,
+                "Actualizacion2": 1590829140000,
+                "Estado": "Activo",
+                "ObjectId": 379
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 4739,
+                "Actualizacion2": 1590829140000,
+                "Estado": "Confirmado",
+                "ObjectId": 380
+            }
+        },
+        {
+            "attributes": {
+                "Muerte": 2,
+                "Actualizacion2": 1590829140000,
+                "Estado": "Fallecido2",
+                "ObjectId": 381
+            }
         }
     ]
 }
