@@ -22,19 +22,22 @@ Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estud
 
 ## Estadisticas
 
-confirmados:  6792
+confirmados:  7055
 
-recuperados:  1053
+recuperados:  1133
 
-fallecidos:  230
+fallecidos:  252
 
-activos:  5427
+activos:  5540
 
-pruebas realizadas:  45828
+pruebas realizadas:  47458
+
+Comida Entregada GT:  12697
 
 
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/resumen.png)
 ![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/pruebas.png)
+![alt tag](https://github.com/ncovgt2020/ncovgt2020/blob/master/imgs/hambre.png)
 
 
 Descripcion de campos
