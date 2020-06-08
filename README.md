@@ -25,8 +25,8 @@ Proposito:
 
 22 de Mayo 2020: Ahora estamos recopilando el numero de pruebas utilizando los reportes de [OjoConMiPisto](https://twitter.com/_ojoconmipisto). ¡Gracias OjoConMiPisto!
 
-08 de Junio 2020: Ahora vamos a intentar recopilar datos del hambre en Guatemala, que la pandemia esta poniendo al frente del escenario. [LaOlla](https://www.facebook.com/
-LaOllaComunitariaCA/)[Comunitaria](https://twitter.com/LaOlla_CA) está haciendo esta gran labor. Esperamos poder trabajar con ellos para obtener los datos diarios de comida entregada y poder verlos en la misma grafica con el resto de indicadores (infectados, confirmados, recuperados, fallecidos).
+08 de Junio 2020: Ahora vamos a intentar recopilar datos del hambre en Guatemala, que la pandemia esta poniendo al frente del escenario. [La Olla](https://www.facebook.com/
+LaOllaComunitariaCA) [Comunitaria](https://twitter.com/LaOlla_CA) está haciendo esta gran labor. Esperamos poder trabajar con ellos para obtener los datos diarios de comida entregada y poder verlos en la misma grafica con el resto de indicadores (infectados, confirmados, recuperados, fallecidos).
 ## Estadisticas
 
 confirmados:  7055
