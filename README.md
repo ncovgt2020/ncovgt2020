@@ -13,14 +13,20 @@ Escribenos un correo ncovgt2020@hotmail.com, o escribe un [issue](https://github
 
 Descripcion: Esta es un dataset ***no oficial***, recopilado de fuentes oficiales, de los casos confirmados de Corona Virus en Guatemala.
 
-Proposito: Que investigadores/desarrolladores/sociedad civil se informen y estudien la propagacion del virus corona NCOVID-19 en Guatemala. Proveer una base de datos para que otras personas desarrollen visualizaciones y analisis.
+Proposito: 
+
+- Que investigadores/desarrolladores/sociedad civil se informen y estudien la propagacion del virus corona NCOVID-19 en Guatemala. 
+
+- Proveer una base de datos para que otras personas desarrollen visualizaciones y analisis.
 
 ***Licencia: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)***
 
 ## Actualizaciones
 
 22 de Mayo 2020: Ahora estamos recopilando el numero de pruebas utilizando los reportes de [OjoConMiPisto](https://twitter.com/_ojoconmipisto). ¡Gracias OjoConMiPisto!
-08 de Junio 2020: Ahora vamos a intentar recopilar datos del hambre en Guatemala, que la pandemia esta poniendo al frente del escenario. [LaOlla](https://www.facebook.com/LaOllaComunitariaCA/)[Comunitaria](https://twitter.com/LaOlla_CA) está haciendo esta gran labor. Esperamos poder trabajar con ellos para obtener los datos diarios de comida entregada y poder verlos en la misma grafica con el resto de indicadores (infectados, confirmados, recuperados, fallecidos).
+
+08 de Junio 2020: Ahora vamos a intentar recopilar datos del hambre en Guatemala, que la pandemia esta poniendo al frente del escenario. [LaOlla](https://www.facebook.com/
+LaOllaComunitariaCA/)[Comunitaria](https://twitter.com/LaOlla_CA) está haciendo esta gran labor. Esperamos poder trabajar con ellos para obtener los datos diarios de comida entregada y poder verlos en la misma grafica con el resto de indicadores (infectados, confirmados, recuperados, fallecidos).
 ## Estadisticas
 
 confirmados:  7055
