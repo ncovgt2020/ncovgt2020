@@ -2,3 +2,7 @@ matplotlib
 numpy
 pandas
 jupyter
+requests
+geopandas
+xlrd
+openpyxl
