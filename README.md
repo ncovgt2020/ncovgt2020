@@ -28,17 +28,17 @@ Proposito:
 08 de Junio 2020: Ahora vamos a intentar recopilar datos del hambre en Guatemala, que la pandemia esta poniendo al frente del escenario. [La Olla](https://www.facebook.com/LaOllaComunitariaCA) [Comunitaria](https://twitter.com/LaOlla_CA) está haciendo esta gran labor. Esperamos poder trabajar con ellos para obtener los datos diarios de comida entregada y poder verlos en la misma grafica con el resto de indicadores (infectados, confirmados, recuperados, fallecidos).
 ## Estadisticas
 
-confirmados:  9845
+confirmados:  12509
 
-recuperados:  1804
+recuperados:  2419
 
-fallecidos:  384
+fallecidos:  483
 
-activos:  7573
+activos:  9605
 
-pruebas realizadas:  58849
+pruebas realizadas:  66843
 
-Comida Entregada GT:  
+Comida Entregada GT:  13347
 
 Comida Entregada GT por [LaOlla](https://www.facebook.com/LaOllaComunitariaCA/)[Comunitaria](https://twitter.com/LaOlla_CA):  13347 (éste dato está desactualizado)
 
