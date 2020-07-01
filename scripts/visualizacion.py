@@ -31,7 +31,7 @@ def DiarioR(Lista):
         
     return NuevaLista
 
-
+GRAF = False
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
 plt.style.use('ggplot')
@@ -56,7 +56,7 @@ fechaH = L_fecha[len(L_fecha)-1]
 fechaH = fechaH[:10]
 
 #--------------------------///----------------------------------------
-if(True):
+if(GRAF):
     #Creacion del plot 1. 
     #Casos Acumulados
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -83,7 +83,7 @@ if(True):
     fig1.savefig("Casos_Acumulados.png")
 
 #--------------------------///----------------------------------------
-if(True):
+if(GRAF):
     #Creacion del plot 2
     #Casos Diarios
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -110,7 +110,7 @@ if(True):
     fig1.savefig("Casos_Diarios.png")
     
 #--------------------------///----------------------------------------
-if(True):
+if(GRAF):
     #Creacion del plot 3. 
     #Pruebas Acumuladas y Diarias
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -139,7 +139,7 @@ if(True):
     fig1.savefig("Resumen_Pruebas_semilogy.png")
 #--------------------------///----------------------------------------
 
-if(True):
+if(GRAF):
     #Creacion del plot 4 
     #Pruebas Diarias y confirmados Diarios
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -183,7 +183,7 @@ if(True):
     
     
 #--------------------------///----------------------------------------    
-if(True):
+if(GRAF):
     #Creacion del plot 5
     #Pruebas Diarias y negativos
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -226,7 +226,49 @@ if(True):
     fig1.savefig("Razon_negativos_pruebas_diario.png")  
     
     
-#--------------------------///----------------------------------------  
+#--------------------------///---------------------------------------- 
+if(True):
+    #Creacion del plot 6. 
+    #Casos Acumulados
+    fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
+    
+    #Plot con porcentajes
+    YP1 = []
+    YP2 = []
+    YP3 = []
+    XP = []
+    for i in range(len(L_activs)):
+        a = L_activs[i]+L_fallds[i]+L_recups[i]
+        if(a!= 0):
+            YP1.append(100*L_activs[i]/a)
+            YP2.append(100*L_recups[i]/a)
+            YP3.append(100*L_fallds[i]/a)
+            XP.append(i)
+          
+    YP = (YP3,YP2,YP1)  
+    #Promedios
+    # Paleta de colores
+    pal = ["#9b59b6", "#DAF7A6", "#1E98C0"]
+    plt.stackplot(XP, YP, labels=['Casos Fallecidos       ('+str(round(YP3[-1],2))+'%)','Casos Recuperados  ('+str(round(YP2[-1],2))+'%)','Casos Activos           ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
+    plt.legend(loc='upper left')
+
+    #Nombre
+    ax.set_title('Evolución Casos Covid-19 GT '+fechaH)
+    ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
+    
+    # Add a legend
+    ax.legend()
+    plt.legend(loc='upper left')
+    
+    #Show
+    plt.show()
+    
+    #Save
+    #Cambio de directorio
+    os.chdir('../imgs')
+    fig1.savefig("Evolucion_Porcentaje_Casos.png")
+
+#--------------------------///---------------------------------------- 
 '''
 if(False):
     #Creacion del plot 6
