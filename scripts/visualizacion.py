@@ -31,7 +31,7 @@ def DiarioR(Lista):
         
     return NuevaLista
 
-GRAF = False
+GRAF = True
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
 plt.style.use('ggplot')
