@@ -227,7 +227,7 @@ if(GRAF):
     
     
 #--------------------------///---------------------------------------- 
-if(True):
+if(GRAF):
     #Creacion del plot 6. 
     #Casos Acumulados
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -269,6 +269,86 @@ if(True):
     fig1.savefig("Evolucion_Porcentaje_Casos.png")
 
 #--------------------------///---------------------------------------- 
+if(True):
+    #Creacion del plot 7. 
+    #Casos Acumulados
+    fig1 , ax = plt.subplots(2,2,figsize=(10, 10))
+    
+    #Correlación de los últimos 30 días casos DIARIOS
+    print( 'Pruebas,  Activos,  Confirmados, Recuperados, Fallecidos')
+    print(np.corrcoef( (DiarioR(L_pruebs)[-30:],DiarioR(L_activs)[-30:],DiarioR(L_confrs)[-30:],DiarioR(L_recups)[-30:],DiarioR(L_fallds)[-30:])  ))
+    
+    
+    ax[0][0].scatter(DiarioR(L_activs)[-30:], DiarioR(L_confrs)[-30:], marker='*', color='#2076FB')
+    ax[0][1].scatter(DiarioR(L_pruebs)[-30:], DiarioR(L_recups)[-30:], marker='*', color='#0DBB10')
+    ax[1][0].scatter(DiarioR(L_pruebs)[-30:], DiarioR(L_fallds)[-30:], marker='*', color='#C725E1')
+    ax[1][1].scatter(DiarioR(L_pruebs)[-30:], DiarioR(L_activs)[-30:], marker='*', color='#FA6311')
+    
+    #Nombre
+    ax[0][0].set_title('Pruebas vs Confirmados '+fechaH)
+    ax[0][0].set(ylabel='Confirmados',xlabel='Pruebas')
+    
+    ax[0][1].set_title('Pruebas vs Recuperados '+fechaH)
+    ax[0][1].set(ylabel='Recuperados',xlabel='Pruebas')    
+    
+    ax[1][0].set_title('Pruebas vs Fallecidos '+fechaH)
+    ax[1][0].set(ylabel='Fallecidos',xlabel='Pruebas')
+    
+    ax[1][1].set_title('Recuperados vs Fallecidos '+fechaH)
+    ax[1][1].set(ylabel='Activos',xlabel='Pruebas')
+    # Add a legend
+    #ax.legend()
+    #plt.legend(loc='upper left')
+    
+    #Show
+    plt.show()
+    
+    #Save
+    #Cambio de directorio
+    #os.chdir('../imgs')
+    #fig1.savefig("Casos_Acumulados.png")
+
+#--------------------------///---------------------------------------- 
+if(False):
+    #Creacion del plot 8
+    #Casos Acumulados
+    fig1 , ax = plt.subplots(2,2,figsize=(10, 10))
+    
+    #Correlación de los últimos 30 días casos Acumualds
+    print( 'Pruebas,  Activos,  Confirmados, Recuperados, Fallecidos')
+    print(np.corrcoef( (L_pruebs[-30:],L_activs[-30:],L_confrs[-30:],L_recups[-30:],L_fallds[-30:])  ))
+    
+    
+    ax[0][0].scatter(L_activs[-30:], L_confrs[-30:], marker='*', color='#2076FB')
+    ax[0][1].scatter(L_pruebs[-30:], L_recups[-30:], marker='*', color='#0DBB10')
+    ax[1][0].scatter(L_pruebs[-30:], L_fallds[-30:], marker='*', color='#C725E1')
+    ax[1][1].scatter(L_pruebs[-30:], L_activs[-30:], marker='*', color='#FA6311')
+    
+    #Nombre
+    ax[0][0].set_title('Pruebas vs Confirmados '+fechaH)
+    ax[0][0].set(ylabel='Confirmados',xlabel='Pruebas')
+    
+    ax[0][1].set_title('Pruebas vs Recuperados '+fechaH)
+    ax[0][1].set(ylabel='Recuperados',xlabel='Pruebas')    
+    
+    ax[1][0].set_title('Pruebas vs Fallecidos '+fechaH)
+    ax[1][0].set(ylabel='Fallecidos',xlabel='Pruebas')
+    
+    ax[1][1].set_title('Recuperados vs Fallecidos '+fechaH)
+    ax[1][1].set(ylabel='Activos',xlabel='Pruebas')
+    # Add a legend
+    #ax.legend()
+    #plt.legend(loc='upper left')
+    
+    #Show
+    plt.show()
+    
+    #Save
+    #Cambio de directorio
+    #os.chdir('../imgs')
+    #fig1.savefig("Casos_Acumulados.png")
+
+#--------------------------///----------------------------------------
 '''
 if(False):
     #Creacion del plot 6
