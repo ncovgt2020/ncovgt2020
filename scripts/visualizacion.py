@@ -116,7 +116,7 @@ if(GRAF):
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
     
     #Cambio de step en la gráfica
-    plt.xticks(np.arange(0,100,5))
+    plt.xticks(np.arange(0,125,5))
     
     ax.bar(dias_Caso1[:-1], DiarioR(L_pruebs),width = 0.75, label='Pruebas Diarias'  ,color='#2EB007')
     ax.semilogy(dias_Caso1, L_pruebs, label='Pruebas Acumuladas' ,color='#509EAA')
