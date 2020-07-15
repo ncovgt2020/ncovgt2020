@@ -31,7 +31,8 @@ def DiarioR(Lista):
         
     return NuevaLista
 
-GRAF = True
+#Variable de control 
+GRAF = False
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
 plt.style.use('ggplot')
@@ -227,7 +228,7 @@ if(GRAF):
     
     
 #--------------------------///---------------------------------------- 
-if(True):
+if(GRAF):
     #Creacion del plot 6. 
     #Casos Acumulados
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -269,55 +270,36 @@ if(True):
     fig1.savefig("Evolucion_Porcentaje_Casos.png")
 
 #--------------------------///---------------------------------------- 
-'''
-if(False):
-    #Creacion del plot 6
-    fig2 , ax = plt.subplots(1,1)
-    
-    #Cambio de directorio
-    os.chdir('../data/record')
-    x = os.listdir()
-    
-    #Variables
-    os.chdir(x[-1])
-    
-    L_confrs_d = []
-    L_recups_d = []
-    L_fallds_d = []
-    L_activs_d = []
-    
-    with open('resumen_todos.json') as f:
-        data = json.load(f)
-        for i in data['features']:
-            if(i['attributes']['Estado'] == 'Activo'): 
-                x1 = i['attributes']['Muerte']
-                
-                L_activs_d.append(x1)
-                #print('Activos '+str(x1))
-                
-            if(i['attributes']['Estado'] == 'Confirmado'): 
-                x2 = i['attributes']['Muerte']
-                L_confrs_d.append(x2)
-                #print('Confirmados '+str(x2))
-                
-            if(i['attributes']['Estado'] == 'Fallecido'): 
-                x3 = i['attributes']['Muerte']
-                L_fallds_d.append(x3)
-                #print('Fallecidos '+str(x3))
-            
-            if(i['attributes']['Estado'] == 'Recuperado'): 
-                x4 = i['attributes']['Muerte']
-                L_recups_d.append(x4)
-                #print('Recuperados '+str(x4))
 
-    ax.plot(dias_Caso1, L_confrs_d, linestyle='-', marker='v', label='Casos Confirmados'  ,color='#2076FB')
-    ax.plot(dias_Caso1, L_recups_d, linestyle='-', marker='<', label='Casos Recuperados'  ,color='#0DBB10')
-    ax.plot(dias_Caso1, L_fallds_d, linestyle='-', marker='>', label='Casos Fallecidos'   ,color='#C725E1')
-    ax.plot(dias_Caso1, L_activs_d, linestyle='-', marker='^', label='Casos Activos'      ,color='#EFEB0D')
+if(True):
+    #Creacion del plot 7. 
+    #Letalidad casos cerrados
+    fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
     
+    #Plot con porcentajes
+    YP1 = []
+    YP2 = []
+    XP = []
+    for i in range(len(L_recups)):
+        a = L_fallds[i]+L_recups[i]
+        if(a!= 0):
+            YP1.append(100*(1-L_fallds[i]/a))
+            YP2.append(100*L_fallds[i]/a)
+            XP.append(i)
+          
+    YP = (YP2,YP1)  
+    #Promedios
+    prom = 100*max(L_fallds)/(max(L_recups)+max(L_fallds))
+    labelProm = 'Promedio ('+str(round(prom,2))+'%)'
+    # Paleta de colores
+    pal = ["#48BEFF", "#3D7068"]
+    plt.stackplot(XP, YP, labels=['Casos Fallecidos       ('+str(round(YP2[-1],2))+'%)','Casos Recuperados  ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
+    plt.hlines(prom,min(XP),max(XP), colors='k', linestyles='dashdot', label=labelProm )
+    plt.legend(loc='upper left')
+
     #Nombre
-    ax.set_title('Resumen datos por día Covid-19 GT '+fechaH)
-    ax.set(ylabel='Total de Casos',xlabel='Días a partir del caso 1')
+    ax.set_title('Evolución de casos cerrados Covid-19 GT '+fechaH)
+    ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
     
     # Add a legend
     ax.legend()
@@ -329,5 +311,4 @@ if(False):
     #Save
     #Cambio de directorio
     #os.chdir('../imgs')
-    #fig1.savefig("Casos_Diarios.png")
- '''
+    #fig1.savefig("Evolucion_Porcentaje_Casos.png")
