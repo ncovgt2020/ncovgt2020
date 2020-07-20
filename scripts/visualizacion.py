@@ -161,6 +161,9 @@ if(GRAF):
             if(PRINT):  print(L_fecha[i+1][:10])
         else:
             R_cp.append(100*D_c[i]/D_p[i])  
+            if( 100*D_c[i]/D_p[i] >100.0):
+                print('Porcentaje mayor al 100% en día: '+str(L_fecha[i+1]))
+                print('Confirmados: '+str(D_c[i])+', Pruebas: '+str(D_p[i]))
         
         
     plt.stackplot(dias_Caso1[:-1],R_cp, labels=['Razón confirmados/pruebas'], colors="#2ecc71", alpha=0.4 )
