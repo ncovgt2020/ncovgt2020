@@ -298,70 +298,11 @@ if(GRAF):
     ax[2].set_title('Evolución Casos Fallecidos')
     ax[2].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
     
+    #Ajuste en límite de la gráfica para evitar que el texto se traslape
+    ax[1].set_ylim([0,max(YP2)+10])
     #Localizacion de las leyendas
     plt.legend(loc='upper right')
     #Show
     plt.show()
 #--------------------------///---------------------------------------- 
-'''
-if(False):
-    #Creacion del plot 6
-    fig2 , ax = plt.subplots(1,1)
-    
-    #Cambio de directorio
-    os.chdir('../data/record')
-    x = os.listdir()
-    
-    #Variables
-    os.chdir(x[-1])
-    
-    L_confrs_d = []
-    L_recups_d = []
-    L_fallds_d = []
-    L_activs_d = []
-    
-    with open('resumen_todos.json') as f:
-        data = json.load(f)
-        for i in data['features']:
-            if(i['attributes']['Estado'] == 'Activo'): 
-                x1 = i['attributes']['Muerte']
-                
-                L_activs_d.append(x1)
-                #print('Activos '+str(x1))
-                
-            if(i['attributes']['Estado'] == 'Confirmado'): 
-                x2 = i['attributes']['Muerte']
-                L_confrs_d.append(x2)
-                #print('Confirmados '+str(x2))
-                
-            if(i['attributes']['Estado'] == 'Fallecido'): 
-                x3 = i['attributes']['Muerte']
-                L_fallds_d.append(x3)
-                #print('Fallecidos '+str(x3))
-            
-            if(i['attributes']['Estado'] == 'Recuperado'): 
-                x4 = i['attributes']['Muerte']
-                L_recups_d.append(x4)
-                #print('Recuperados '+str(x4))
 
-    ax.plot(dias_Caso1, L_confrs_d, linestyle='-', marker='v', label='Casos Confirmados'  ,color='#2076FB')
-    ax.plot(dias_Caso1, L_recups_d, linestyle='-', marker='<', label='Casos Recuperados'  ,color='#0DBB10')
-    ax.plot(dias_Caso1, L_fallds_d, linestyle='-', marker='>', label='Casos Fallecidos'   ,color='#C725E1')
-    ax.plot(dias_Caso1, L_activs_d, linestyle='-', marker='^', label='Casos Activos'      ,color='#EFEB0D')
-    
-    #Nombre
-    ax.set_title('Resumen datos por día Covid-19 GT '+fechaH)
-    ax.set(ylabel='Total de Casos',xlabel='Días a partir del caso 1')
-    
-    # Add a legend
-    ax.legend()
-    plt.legend(loc='upper left')
-    
-    #Show
-    plt.show()
-    
-    #Save
-    #Cambio de directorio
-    #os.chdir('../imgs')
-    #fig1.savefig("Casos_Diarios.png")
- '''
