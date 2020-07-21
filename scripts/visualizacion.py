@@ -170,7 +170,7 @@ if(GRAF):
                 print('Confirmados: '+str(D_c[i])+', Pruebas: '+str(D_p[i]))
         
     R_f = (R_cp,R_cp2)     
-    plt.stackplot(dias_Caso1[:-1],R_f, labels=['Razón confirmados/pruebas','Razón no confirmados/pruebas'], colors=["#2ecc71","#0C4FC6"], alpha=0.4 )
+    plt.stackplot(dias_Caso1[:-1],R_f, labels=['Razón confirmados/pruebas','Razón negativos/pruebas'], colors=["#2ecc71","#0C4FC6"], alpha=0.4 )
     plt.legend(loc='upper left')   
     #Nombre
     ax.set_title('Casos confirmados vs Pruebas diarias Covid-19 GT '+fechaH)
@@ -190,7 +190,7 @@ if(GRAF):
     
     
 #--------------------------///----------------------------------------    
-if(GRAF):
+if(False):
     #Creacion del plot 5
     #Pruebas Diarias y negativos
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -247,25 +247,27 @@ if(GRAF):
     for i in range(len(L_activs)):
         a = L_activs[i]+L_fallds[i]+L_recups[i]
         if(a!= 0):
-            YP1.append(100*L_activs[i]/a)
-            YP2.append(100*L_recups[i]/a)
+            YP1.append(100*L_recups[i]/a)
+            YP2.append(100*L_activs[i]/a)
             YP3.append(100*L_fallds[i]/a)
             XP.append(i)
           
     YP = (YP3,YP2,YP1)  
     #Promedios
     # Paleta de colores
-    pal = ["#9b59b6", "#DAF7A6", "#1E98C0"]
-    plt.stackplot(XP, YP, labels=['Casos Fallecidos       ('+str(round(YP3[-1],2))+'%)','Casos Recuperados  ('+str(round(YP2[-1],2))+'%)','Casos Activos           ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
+    pal = ["#9b59b6", "#1E98C0" ,"#DAF7A6"]
+    plt.stackplot(XP, YP, labels=['Casos Fallecidos        ('+str(round(YP3[-1],2))+'%)','Casos Activos            ('+str(round(YP2[-1],2))+'%)','Casos Recuperados   ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
     plt.legend(loc='upper left')
 
     #Nombre
     ax.set_title('Evolución Casos Covid-19 GT '+fechaH)
     ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
     
+    #Limites eje Y
+    ax.set_ylim([0,115])
     # Add a legend
     ax.legend()
-    plt.legend(loc='upper left')
+    plt.legend(loc='upper right')
     
     #Show
     plt.show()
@@ -299,15 +301,15 @@ if(GRAF):
     ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')      
     
     #Nombre
-    ax[0].set_title('Evolución Casos Activos')
-    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')    
-    ax[1].set_title('Evolución Casos Recuperados')
-    ax[1].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
+    ax[1].set_title('Evolución Casos Activos')
+    ax[1].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')    
+    ax[0].set_title('Evolución Casos Recuperados')
+    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
     ax[2].set_title('Evolución Casos Fallecidos')
     ax[2].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
     
     #Ajuste en límite de la gráfica para evitar que el texto se traslape
-    ax[1].set_ylim([0,max(YP2)+10])
+    ax[0].set_ylim([0,max(YP2)+10])
     #Localizacion de las leyendas
     plt.legend(loc='upper right')
     #Show
@@ -349,5 +351,17 @@ if(GRAF):
     #Nombre
     ax.set_title('Evolución de casos cerrados Covid-19 GT '+fechaH)
     ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
+    
+    #Ajuste en límite de la gráfica para evitar que el texto se traslape
+    ax.set_ylim([0,115])
+    #Localizacion de las leyendas
+    plt.legend(loc='upper right')
+    #Show
+    plt.show()
+       
+    #Save
+    #Cambio de directorio
+    os.chdir('../imgs')
+    fig1.savefig("Evolucion_Casos_Cerrados.png")
 #--------------------------///---------------------------------------- 
 
