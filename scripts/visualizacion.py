@@ -32,7 +32,7 @@ def DiarioR(Lista):
     return NuevaLista
 
 #Variable de control 
-GRAF = False
+GRAF = True
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
 plt.style.use('ggplot')
@@ -149,6 +149,7 @@ if(GRAF):
     D_c = DiarioR(L_confrs)
     D_p = DiarioR(L_pruebs)
     R_cp = []
+    R_cp2 = []
     #Validador para imprimir en consola
     Val = True
     PRINT = False
@@ -156,18 +157,20 @@ if(GRAF):
         #Reporte cuando no se encuentran pruebas Diarias
         if(D_p[i] == 0):
             R_cp.append(0)
+            R_cp2.append(0)
             if(Val): 
                 if(PRINT):  print("No se reportaron Pruebas estos días: ")
                 Val = False
             if(PRINT):  print(L_fecha[i+1][:10])
         else:
             R_cp.append(100*D_c[i]/D_p[i])  
+            R_cp2.append(100*(-D_c[i]+D_p[i])/D_p[i]) 
             if( 100*D_c[i]/D_p[i] >100.0):
                 print('Porcentaje mayor al 100% en día: '+str(L_fecha[i+1]))
                 print('Confirmados: '+str(D_c[i])+', Pruebas: '+str(D_p[i]))
         
-        
-    plt.stackplot(dias_Caso1[:-1],R_cp, labels=['Razón confirmados/pruebas'], colors="#2ecc71", alpha=0.4 )
+    R_f = (R_cp,R_cp2)     
+    plt.stackplot(dias_Caso1[:-1],R_f, labels=['Razón confirmados/pruebas','Razón no confirmados/pruebas'], colors=["#2ecc71","#0C4FC6"], alpha=0.4 )
     plt.legend(loc='upper left')   
     #Nombre
     ax.set_title('Casos confirmados vs Pruebas diarias Covid-19 GT '+fechaH)
@@ -271,14 +274,29 @@ if(GRAF):
     #Cambio de directorio
     os.chdir('../imgs')
     fig1.savefig("Evolucion_Porcentaje_Casos.png")
-        
-    labelPromB = 'Promedio ('+str(round(YP2[-1],2))+'%)'
+    
+    #Plot secundario
+    fig2 , ax = plt.subplots(1,3,figsize=(20, 4))
+    ax[0].stackplot(XP, YP1, colors=pal[2], alpha=0.9)
+    ax[1].stackplot(XP, YP2, colors=pal[1], alpha=0.9)
+    ax[2].stackplot(XP, YP3, colors=pal[0], alpha=0.9)
+
+    #Lineas de promedio
+    labelPromA = 'Valor Actual ('+str(round(YP1[-1],2))+'%)'
+    ax[0].hlines(YP1[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromA )
+    ax[0].legend()
+
+    labelPromB = 'Valor Actual ('+str(round(YP2[-1],2))+'%)'
     ax[1].hlines(YP2[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromB )
     ax[1].legend()   
-    
-    labelPromC = 'Promedio ('+str(round(YP3[-1],2))+'%)'
+
+    labelPromC = 'Valor Actual ('+str(round(YP3[-1],2))+'%)'
     ax[2].hlines(YP3[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromC )
     ax[2].legend()
+
+    #Nombre
+    ax[0].set_title('Evolución Casos Activos')
+    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')      
     
     #Nombre
     ax[0].set_title('Evolución Casos Activos')
@@ -294,38 +312,15 @@ if(GRAF):
     plt.legend(loc='upper right')
     #Show
     plt.show()
-   
-    labelPromB = 'Promedio ('+str(round(YP2[-1],2))+'%)'
-    ax[1].hlines(YP2[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromB )
-    ax[1].legend()   
-    
-    labelPromC = 'Promedio ('+str(round(YP3[-1],2))+'%)'
-    ax[2].hlines(YP3[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromC )
-    ax[2].legend()
-    
-    #Nombre
-    ax[0].set_title('Evolución Casos Activos')
-    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')    
-    ax[1].set_title('Evolución Casos Recuperados')
-    ax[1].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
-    ax[2].set_title('Evolución Casos Fallecidos')
-    ax[2].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
-    
-    #Ajuste en límite de la gráfica para evitar que el texto se traslape
-    ax[1].set_ylim([0,max(YP2)+10])
-    #Localizacion de las leyendas
-    plt.legend(loc='upper right')
-    #Show
-    plt.show()
-    
+       
     #Save
     #Cambio de directorio
-    #os.chdir('../imgs')
-    #fig1.savefig("Evolucion_Porcentaje_Casos.png")
+    os.chdir('../imgs')
+    fig1.savefig("Evolucion_Porcentaje_Casos_Detalle.png")
 
 #--------------------------///---------------------------------------- 
 
-if(True):
+if(GRAF):
     #Creacion del plot 7. 
     #Letalidad casos cerrados
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
