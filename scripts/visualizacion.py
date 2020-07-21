@@ -31,6 +31,7 @@ def DiarioR(Lista):
         
     return NuevaLista
 
+#Variable de control 
 GRAF = True
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
@@ -116,7 +117,7 @@ if(GRAF):
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
     
     #Cambio de step en la gráfica
-    plt.xticks(np.arange(0,125,5))
+    plt.xticks(np.arange(0,max(dias_Caso1)+10,5))
     
     ax.bar(dias_Caso1[:-1], DiarioR(L_pruebs),width = 0.75, label='Pruebas Diarias'  ,color='#2EB007')
     ax.semilogy(dias_Caso1, L_pruebs, label='Pruebas Acumuladas' ,color='#509EAA')
@@ -148,22 +149,28 @@ if(GRAF):
     D_c = DiarioR(L_confrs)
     D_p = DiarioR(L_pruebs)
     R_cp = []
+    R_cp2 = []
     #Validador para imprimir en consola
     Val = True
-    
+    PRINT = False
     for i in range(len(D_p)):
         #Reporte cuando no se encuentran pruebas Diarias
         if(D_p[i] == 0):
             R_cp.append(0)
+            R_cp2.append(0)
             if(Val): 
-                print("No se reportaron Pruebas estos días: ")
+                if(PRINT):  print("No se reportaron Pruebas estos días: ")
                 Val = False
-            print(L_fecha[i+1][:10])
+            if(PRINT):  print(L_fecha[i+1][:10])
         else:
             R_cp.append(100*D_c[i]/D_p[i])  
+            R_cp2.append(100*(-D_c[i]+D_p[i])/D_p[i]) 
+            if( 100*D_c[i]/D_p[i] >100.0):
+                print('Porcentaje mayor al 100% en día: '+str(L_fecha[i+1]))
+                print('Confirmados: '+str(D_c[i])+', Pruebas: '+str(D_p[i]))
         
-        
-    plt.stackplot(dias_Caso1[:-1],R_cp, labels=['Razón confirmados/pruebas'], colors="#2ecc71", alpha=0.4 )
+    R_f = (R_cp,R_cp2)     
+    plt.stackplot(dias_Caso1[:-1],R_f, labels=['Razón confirmados/pruebas','Razón no confirmados/pruebas'], colors=["#2ecc71","#0C4FC6"], alpha=0.4 )
     plt.legend(loc='upper left')   
     #Nombre
     ax.set_title('Casos confirmados vs Pruebas diarias Covid-19 GT '+fechaH)
@@ -193,29 +200,29 @@ if(GRAF):
     #Validador para imprimir en consola
     Val = True
     R_cp = []
-    
+    PRINT = False
     for i in range(len(D_p)):
         #Reporte cuando no se encuentran pruebas Diarias
         if(D_p[i] == 0):
             R_cp.append(0)
             if(Val): 
-                print("No se reportaron Pruebas estos días: ")
+                if(PRINT):  print("No se reportaron Pruebas estos días: ")
                 Val = False
-            print(L_fecha[i+1][:10])
+            if(PRINT):  print(L_fecha[i+1][:10])
         else:
             var = (L_pruebs[i+1]-L_confrs[i+1])/D_p[i]
             R_cp.append(var)  
         
         
-    plt.stackplot(dias_Caso1[:-1],R_cp, colors="#0C4FC6", alpha=0.4 )
+    plt.stackplot(dias_Caso1[:-1],R_cp, colors="#0C4FC6", alpha=0.4 ,labels=['Razón negativos/pruebas'])
     plt.legend(loc='upper left')   
     #Nombre
     ax.set_title('Casos negativos vs Pruebas diarias Covid-19 GT '+fechaH)
     ax.set(ylabel='Razón',xlabel='Días a partir del caso 1')
     
     # Add a legend
-    #ax.legend()
-    #plt.legend(loc='upper left')
+    ax.legend()
+    plt.legend(loc='upper left')
     
     #Show
     plt.show()
@@ -227,7 +234,7 @@ if(GRAF):
     
     
 #--------------------------///---------------------------------------- 
-if(True):
+if(GRAF):
     #Creacion del plot 6. 
     #Casos Acumulados
     fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
@@ -267,67 +274,80 @@ if(True):
     #Cambio de directorio
     os.chdir('../imgs')
     fig1.savefig("Evolucion_Porcentaje_Casos.png")
+    
+    #Plot secundario
+    fig2 , ax = plt.subplots(1,3,figsize=(20, 4))
+    ax[0].stackplot(XP, YP1, colors=pal[2], alpha=0.9)
+    ax[1].stackplot(XP, YP2, colors=pal[1], alpha=0.9)
+    ax[2].stackplot(XP, YP3, colors=pal[0], alpha=0.9)
 
-#--------------------------///---------------------------------------- 
-'''
-if(False):
-    #Creacion del plot 6
-    fig2 , ax = plt.subplots(1,1)
-    
-    #Cambio de directorio
-    os.chdir('../data/record')
-    x = os.listdir()
-    
-    #Variables
-    os.chdir(x[-1])
-    
-    L_confrs_d = []
-    L_recups_d = []
-    L_fallds_d = []
-    L_activs_d = []
-    
-    with open('resumen_todos.json') as f:
-        data = json.load(f)
-        for i in data['features']:
-            if(i['attributes']['Estado'] == 'Activo'): 
-                x1 = i['attributes']['Muerte']
-                
-                L_activs_d.append(x1)
-                #print('Activos '+str(x1))
-                
-            if(i['attributes']['Estado'] == 'Confirmado'): 
-                x2 = i['attributes']['Muerte']
-                L_confrs_d.append(x2)
-                #print('Confirmados '+str(x2))
-                
-            if(i['attributes']['Estado'] == 'Fallecido'): 
-                x3 = i['attributes']['Muerte']
-                L_fallds_d.append(x3)
-                #print('Fallecidos '+str(x3))
-            
-            if(i['attributes']['Estado'] == 'Recuperado'): 
-                x4 = i['attributes']['Muerte']
-                L_recups_d.append(x4)
-                #print('Recuperados '+str(x4))
+    #Lineas de promedio
+    labelPromA = 'Valor Actual ('+str(round(YP1[-1],2))+'%)'
+    ax[0].hlines(YP1[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromA )
+    ax[0].legend()
 
-    ax.plot(dias_Caso1, L_confrs_d, linestyle='-', marker='v', label='Casos Confirmados'  ,color='#2076FB')
-    ax.plot(dias_Caso1, L_recups_d, linestyle='-', marker='<', label='Casos Recuperados'  ,color='#0DBB10')
-    ax.plot(dias_Caso1, L_fallds_d, linestyle='-', marker='>', label='Casos Fallecidos'   ,color='#C725E1')
-    ax.plot(dias_Caso1, L_activs_d, linestyle='-', marker='^', label='Casos Activos'      ,color='#EFEB0D')
+    labelPromB = 'Valor Actual ('+str(round(YP2[-1],2))+'%)'
+    ax[1].hlines(YP2[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromB )
+    ax[1].legend()   
+
+    labelPromC = 'Valor Actual ('+str(round(YP3[-1],2))+'%)'
+    ax[2].hlines(YP3[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromC )
+    ax[2].legend()
+
+    #Nombre
+    ax[0].set_title('Evolución Casos Activos')
+    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')      
     
     #Nombre
-    ax.set_title('Resumen datos por día Covid-19 GT '+fechaH)
-    ax.set(ylabel='Total de Casos',xlabel='Días a partir del caso 1')
+    ax[0].set_title('Evolución Casos Activos')
+    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')    
+    ax[1].set_title('Evolución Casos Recuperados')
+    ax[1].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
+    ax[2].set_title('Evolución Casos Fallecidos')
+    ax[2].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
     
-    # Add a legend
-    ax.legend()
-    plt.legend(loc='upper left')
-    
+    #Ajuste en límite de la gráfica para evitar que el texto se traslape
+    ax[1].set_ylim([0,max(YP2)+10])
+    #Localizacion de las leyendas
+    plt.legend(loc='upper right')
     #Show
     plt.show()
-    
+       
     #Save
     #Cambio de directorio
-    #os.chdir('../imgs')
-    #fig1.savefig("Casos_Diarios.png")
- '''
+    os.chdir('../imgs')
+    fig1.savefig("Evolucion_Porcentaje_Casos_Detalle.png")
+
+#--------------------------///---------------------------------------- 
+
+if(GRAF):
+    #Creacion del plot 7. 
+    #Letalidad casos cerrados
+    fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
+    
+    #Plot con porcentajes
+    YP1 = []
+    YP2 = []
+    XP = []
+    for i in range(len(L_recups)):
+        a = L_fallds[i]+L_recups[i]
+        if(a!= 0):
+            YP1.append(100*(1-L_fallds[i]/a))
+            YP2.append(100*L_fallds[i]/a)
+            XP.append(i)
+          
+    YP = (YP2,YP1)  
+    #Promedios
+    prom = 100*max(L_fallds)/(max(L_recups)+max(L_fallds))
+    labelProm = 'Promedio ('+str(round(prom,2))+'%)'
+    # Paleta de colores
+    pal = ["#48BEFF", "#3D7068"]
+    plt.stackplot(XP, YP, labels=['Casos Fallecidos       ('+str(round(YP2[-1],2))+'%)','Casos Recuperados  ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
+    plt.hlines(prom,min(XP),max(XP), colors='k', linestyles='dashdot', label=labelProm )
+    plt.legend(loc='upper left')
+
+    #Nombre
+    ax.set_title('Evolución de casos cerrados Covid-19 GT '+fechaH)
+    ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
+#--------------------------///---------------------------------------- 
+
