@@ -31,7 +31,8 @@ def DiarioR(Lista):
         
     return NuevaLista
 
-GRAF = True
+#Variable de control 
+GRAF = False
 #Modifico los fonts del plot
 #Opciones con: print(plt.style.available)
 plt.style.use('ggplot')
@@ -270,18 +271,7 @@ if(GRAF):
     #Cambio de directorio
     os.chdir('../imgs')
     fig1.savefig("Evolucion_Porcentaje_Casos.png")
-    
-    #Plot secundario
-    fig2 , ax = plt.subplots(1,3,figsize=(20, 4))
-    ax[0].stackplot(XP, YP1, colors=pal[2], alpha=0.9)
-    ax[1].stackplot(XP, YP2, colors=pal[1], alpha=0.9)
-    ax[2].stackplot(XP, YP3, colors=pal[0], alpha=0.9)
-    
-    #Lineas de promedio
-    labelPromA = 'Promedio ('+str(round(YP1[-1],2))+'%)'
-    ax[0].hlines(YP1[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromA )
-    ax[0].legend()
-    
+        
     labelPromB = 'Promedio ('+str(round(YP2[-1],2))+'%)'
     ax[1].hlines(YP2[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromB )
     ax[1].legend()   
@@ -304,5 +294,65 @@ if(GRAF):
     plt.legend(loc='upper right')
     #Show
     plt.show()
+   
+    labelPromB = 'Promedio ('+str(round(YP2[-1],2))+'%)'
+    ax[1].hlines(YP2[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromB )
+    ax[1].legend()   
+    
+    labelPromC = 'Promedio ('+str(round(YP3[-1],2))+'%)'
+    ax[2].hlines(YP3[-1],min(XP),max(XP), colors='k', linestyles='dashdot', label=labelPromC )
+    ax[2].legend()
+    
+    #Nombre
+    ax[0].set_title('Evolución Casos Activos')
+    ax[0].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')    
+    ax[1].set_title('Evolución Casos Recuperados')
+    ax[1].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
+    ax[2].set_title('Evolución Casos Fallecidos')
+    ax[2].set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')  
+    
+    #Ajuste en límite de la gráfica para evitar que el texto se traslape
+    ax[1].set_ylim([0,max(YP2)+10])
+    #Localizacion de las leyendas
+    plt.legend(loc='upper right')
+    #Show
+    plt.show()
+    
+    #Save
+    #Cambio de directorio
+    #os.chdir('../imgs')
+    #fig1.savefig("Evolucion_Porcentaje_Casos.png")
+
+#--------------------------///---------------------------------------- 
+
+if(True):
+    #Creacion del plot 7. 
+    #Letalidad casos cerrados
+    fig1 , ax = plt.subplots(1,1,figsize=(12, 8))
+    
+    #Plot con porcentajes
+    YP1 = []
+    YP2 = []
+    XP = []
+    for i in range(len(L_recups)):
+        a = L_fallds[i]+L_recups[i]
+        if(a!= 0):
+            YP1.append(100*(1-L_fallds[i]/a))
+            YP2.append(100*L_fallds[i]/a)
+            XP.append(i)
+          
+    YP = (YP2,YP1)  
+    #Promedios
+    prom = 100*max(L_fallds)/(max(L_recups)+max(L_fallds))
+    labelProm = 'Promedio ('+str(round(prom,2))+'%)'
+    # Paleta de colores
+    pal = ["#48BEFF", "#3D7068"]
+    plt.stackplot(XP, YP, labels=['Casos Fallecidos       ('+str(round(YP2[-1],2))+'%)','Casos Recuperados  ('+str(round(YP1[-1],2))+'%)'], colors=pal, alpha=0.7)
+    plt.hlines(prom,min(XP),max(XP), colors='k', linestyles='dashdot', label=labelProm )
+    plt.legend(loc='upper left')
+
+    #Nombre
+    ax.set_title('Evolución de casos cerrados Covid-19 GT '+fechaH)
+    ax.set(ylabel='Porcentaje',xlabel='Días a partir del caso 1')
 #--------------------------///---------------------------------------- 
 
