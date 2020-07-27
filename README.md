@@ -2,7 +2,7 @@
 
 Si te parece importante este repositorio, ***porfavor ayudanos***. 
 
-Necesitamos voluntarios queÑ
+Necesitamos voluntarios que:
 - Busquen, recopilen y verifiquen informacion. 
 - Utilizando estos datos de Guatemala, contribuyan al [repositorio de latinoamérica](https://github.com/DataScienceResearchPeru/covid-19_latinoamerica).
 - Generen visualizaciones a través de nuestros datos.
@@ -58,7 +58,7 @@ Contine la informacion disponible de los casos confirmados de corona virus en Gu
 	- 2: vuelo 6 de marzo ib	eria
 	- 3: contacto con paciente 2 (primer fallecido)
 	- 4: vuelo 26 de marzo, rescate de Espana
-	- 5: contacto con familiar paciente 38 (este familiar de paciente 38 vino de Nueva York)_
+	- 5: contacto con familiar paciente 38 (este familiar de paciente 38 vino de Nueva York)
 	- 6: contacto con paciente 32, que a su vez tu contacto con familiar de paciente 2 (primer fallecido)
 - razon_infeccion: causa de la infeccion (viaje, visita a familiar, visita a hospital, contacto con paciente, etc) (string)
 - ingreso_guatemala: aa-mm-dd, si viajo al extranjero, fecha en que regreso a Guatemala, o campo vacio si es desconocido (string)
