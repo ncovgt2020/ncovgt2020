@@ -1,0 +1,394 @@
+{
+    "objectIdFieldName": "FID",
+    "uniqueIdField": {
+        "name": "FID",
+        "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryProperties": {
+        "shapeAreaFieldName": "Shape__Area",
+        "shapeLengthFieldName": "Shape__Length",
+        "units": "esriMeters"
+    },
+    "geometryType": "esriGeometryPolygon",
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    },
+    "fields": [
+        {
+            "name": "FID",
+            "type": "esriFieldTypeOID",
+            "alias": "FID",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ADM1_ES",
+            "type": "esriFieldTypeString",
+            "alias": "ADM1_ES",
+            "sqlType": "sqlTypeOther",
+            "length": 50,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Confirmado",
+            "type": "esriFieldTypeInteger",
+            "alias": "Confirmado",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Recuperado",
+            "type": "esriFieldTypeInteger",
+            "alias": "Recuperado",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Fallecido",
+            "type": "esriFieldTypeInteger",
+            "alias": "Fallecido",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Activo",
+            "type": "esriFieldTypeInteger",
+            "alias": "Activo",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Shape__Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Area",
+            "sqlType": "sqlTypeDouble",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Shape__Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Length",
+            "sqlType": "sqlTypeDouble",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Crecimiento",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Crecimiento",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "FID": 1,
+                "ADM1_ES": "Alta Verapaz",
+                "Confirmado": 712,
+                "Recuperado": 9,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 11494117843.2988,
+                "Shape__Length": 689237.728278644,
+                "Crecimiento": 26
+            }
+        },
+        {
+            "attributes": {
+                "FID": 2,
+                "ADM1_ES": "Baja Verapaz",
+                "Confirmado": 390,
+                "Recuperado": 2,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 3257094025.32031,
+                "Shape__Length": 336901.635053911,
+                "Crecimiento": 15
+            }
+        },
+        {
+            "attributes": {
+                "FID": 3,
+                "ADM1_ES": "Chimaltenango",
+                "Confirmado": 1005,
+                "Recuperado": 9,
+                "Fallecido": 0,
+                "Activo": 18,
+                "Shape__Area": 2004038192.82129,
+                "Shape__Length": 241296.513741215,
+                "Crecimiento": 42
+            }
+        },
+        {
+            "attributes": {
+                "FID": 4,
+                "ADM1_ES": "Chiquimula",
+                "Confirmado": 767,
+                "Recuperado": 1,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 2596452667.03906,
+                "Shape__Length": 287326.797149195,
+                "Crecimiento": 52
+            }
+        },
+        {
+            "attributes": {
+                "FID": 5,
+                "ADM1_ES": "El Progreso",
+                "Confirmado": 879,
+                "Recuperado": 17,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 1976825310.80762,
+                "Shape__Length": 233570.460578907,
+                "Crecimiento": 31
+            }
+        },
+        {
+            "attributes": {
+                "FID": 6,
+                "ADM1_ES": "Escuintla",
+                "Confirmado": 3433,
+                "Recuperado": 37,
+                "Fallecido": 0,
+                "Activo": 1,
+                "Shape__Area": 4819690279.52734,
+                "Shape__Length": 413397.279507184,
+                "Crecimiento": 50
+            }
+        },
+        {
+            "attributes": {
+                "FID": 7,
+                "ADM1_ES": "Guatemala",
+                "Confirmado": 37103,
+                "Recuperado": 392,
+                "Fallecido": 5,
+                "Activo": 82,
+                "Shape__Area": 2369652829.3877,
+                "Shape__Length": 286624.665620564,
+                "Crecimiento": 493
+            }
+        },
+        {
+            "attributes": {
+                "FID": 8,
+                "ADM1_ES": "Huehuetenango",
+                "Confirmado": 397,
+                "Recuperado": 1,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 7985807984.69238,
+                "Shape__Length": 466681.528766041,
+                "Crecimiento": 29
+            }
+        },
+        {
+            "attributes": {
+                "FID": 9,
+                "ADM1_ES": "Izabal",
+                "Confirmado": 1651,
+                "Recuperado": 43,
+                "Fallecido": 0,
+                "Activo": 3,
+                "Shape__Area": 8117934001.60449,
+                "Shape__Length": 909253.292136215,
+                "Crecimiento": 90
+            }
+        },
+        {
+            "attributes": {
+                "FID": 10,
+                "ADM1_ES": "Jalapa",
+                "Confirmado": 220,
+                "Recuperado": 0,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 2181336235.83789,
+                "Shape__Length": 253214.783877797,
+                "Crecimiento": 30
+            }
+        },
+        {
+            "attributes": {
+                "FID": 11,
+                "ADM1_ES": "Jutiapa",
+                "Confirmado": 535,
+                "Recuperado": 4,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 3551327156.2793,
+                "Shape__Length": 471491.000645825,
+                "Crecimiento": 14
+            }
+        },
+        {
+            "attributes": {
+                "FID": 12,
+                "ADM1_ES": "Petén",
+                "Confirmado": 609,
+                "Recuperado": 3,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 39473187779.0352,
+                "Shape__Length": 1095599.38586899,
+                "Crecimiento": 25
+            }
+        },
+        {
+            "attributes": {
+                "FID": 13,
+                "ADM1_ES": "Quetzaltenango",
+                "Confirmado": 3227,
+                "Recuperado": 26,
+                "Fallecido": 0,
+                "Activo": 6,
+                "Shape__Area": 2294989849.77051,
+                "Shape__Length": 347764.312438039,
+                "Crecimiento": 64
+            }
+        },
+        {
+            "attributes": {
+                "FID": 14,
+                "ADM1_ES": "Quiché",
+                "Confirmado": 352,
+                "Recuperado": 3,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 7880607426.22656,
+                "Shape__Length": 788016.059602633,
+                "Crecimiento": 8
+            }
+        },
+        {
+            "attributes": {
+                "FID": 15,
+                "ADM1_ES": "Retalhuleu",
+                "Confirmado": 609,
+                "Recuperado": 1,
+                "Fallecido": 0,
+                "Activo": 1,
+                "Shape__Area": 2084491034.2832,
+                "Shape__Length": 311293.983924952,
+                "Crecimiento": 12
+            }
+        },
+        {
+            "attributes": {
+                "FID": 16,
+                "ADM1_ES": "Sacatepéquez",
+                "Confirmado": 2661,
+                "Recuperado": 36,
+                "Fallecido": 0,
+                "Activo": 10,
+                "Shape__Area": 575705235.776367,
+                "Shape__Length": 137440.087172807,
+                "Crecimiento": 49
+            }
+        },
+        {
+            "attributes": {
+                "FID": 17,
+                "ADM1_ES": "San Marcos",
+                "Confirmado": 1817,
+                "Recuperado": 55,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 3832286589.61621,
+                "Shape__Length": 406509.922455138,
+                "Crecimiento": 24
+            }
+        },
+        {
+            "attributes": {
+                "FID": 18,
+                "ADM1_ES": "Santa Rosa",
+                "Confirmado": 753,
+                "Recuperado": 5,
+                "Fallecido": 0,
+                "Activo": 1,
+                "Shape__Area": 3381790332.21094,
+                "Shape__Length": 364174.54058878,
+                "Crecimiento": 33
+            }
+        },
+        {
+            "attributes": {
+                "FID": 19,
+                "ADM1_ES": "Sololá",
+                "Confirmado": 337,
+                "Recuperado": 1,
+                "Fallecido": 0,
+                "Activo": 3,
+                "Shape__Area": 1254908672.37988,
+                "Shape__Length": 200752.112205111,
+                "Crecimiento": 9
+            }
+        },
+        {
+            "attributes": {
+                "FID": 20,
+                "ADM1_ES": "Suchitepéquez",
+                "Confirmado": 1648,
+                "Recuperado": 7,
+                "Fallecido": 0,
+                "Activo": 2,
+                "Shape__Area": 2305159499.51953,
+                "Shape__Length": 356451.801786471,
+                "Crecimiento": 66
+            }
+        },
+        {
+            "attributes": {
+                "FID": 21,
+                "ADM1_ES": "Totonicapán",
+                "Confirmado": 366,
+                "Recuperado": 9,
+                "Fallecido": 0,
+                "Activo": 4,
+                "Shape__Area": 1160593231.52344,
+                "Shape__Length": 194074.33862696,
+                "Crecimiento": 14
+            }
+        },
+        {
+            "attributes": {
+                "FID": 22,
+                "ADM1_ES": "Zacapa",
+                "Confirmado": 691,
+                "Recuperado": 2,
+                "Fallecido": 0,
+                "Activo": 0,
+                "Shape__Area": 2898526770.22461,
+                "Shape__Length": 326807.984156104,
+                "Crecimiento": 13
+            }
+        },
+        {
+            "attributes": {
+                "FID": 24,
+                "ADM1_ES": "No Definido",
+                "Confirmado": 122,
+                "Recuperado": 0,
+                "Fallecido": null,
+                "Activo": null,
+                "Shape__Area": null,
+                "Shape__Length": null,
+                "Crecimiento": 0
+            }
+        }
+    ]
+}
